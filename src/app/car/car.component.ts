@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {Car} from '../model/Car';
 
 @Component({
   selector: 'app-car',
@@ -8,7 +9,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class CarComponent implements OnInit {
 
   @Input()
-  car;
+  car: Car;
 
   constructor() { }
 
