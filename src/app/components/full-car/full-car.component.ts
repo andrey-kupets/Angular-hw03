@@ -7,9 +7,10 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['./full-car.component.css']
 })
 export class FullCarComponent implements OnInit {
+  id: number;
 
   constructor(private activatedRoute: ActivatedRoute) {
-    this.activatedRoute.params.subscribe(value => console.log(value))
+    this.activatedRoute.params.subscribe(value => this.id = value.id);
   }
 
   ngOnInit(): void {
